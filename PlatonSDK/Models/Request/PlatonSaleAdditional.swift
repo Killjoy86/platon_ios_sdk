@@ -6,6 +6,7 @@ protocol PlatonWebAdditionalProtocol {
     var ext2: String? { get set }
     var ext3: String? { get set }
     var ext4: String? { get set }
+    var ext10: String? { get set }
 }
 
 protocol PlatonWebTokenAdditionalProtocol {
@@ -66,20 +67,25 @@ public struct PlatonWebAdditional: PlatonParametersProtocol, PlatonWebAdditional
     /// Client Parameter 4
     var ext4: String?
     
+    /// Client Parameter 10
+    var ext10: String?
+    
     public var platonParams: PlatonParams {
         return [
             PlatonMethodProperty.ext1: ext1,
             PlatonMethodProperty.ext2: ext2,
             PlatonMethodProperty.ext3: ext3,
             PlatonMethodProperty.ext4: ext4,
+            PlatonMethodProperty.ext10: ext10
         ]
     }
     
-    public init(ext1: String?, ext2: String?, ext3: String?, ext4: String?) {
+    public init(ext1: String?, ext2: String?, ext3: String?, ext4: String?, ext10: String?) {
         self.ext1 = ext1
         self.ext2 = ext2
         self.ext3 = ext3
         self.ext4 = ext4
+        self.ext10 = ext10
     }
     
 }
