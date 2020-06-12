@@ -110,6 +110,9 @@ public struct PlatonWebSaleAdditional: PlatonParametersProtocol, PlatonWebAdditi
     /// Client Parameter 4
     var ext4: String?
     
+    /// Client Parameter 4
+    var ext10: String?
+    
     public var platonParams: PlatonParams {
         return [
             PlatonMethodProperty.lang: language,
@@ -119,10 +122,11 @@ public struct PlatonWebSaleAdditional: PlatonParametersProtocol, PlatonWebAdditi
             PlatonMethodProperty.ext2: ext2,
             PlatonMethodProperty.ext3: ext3,
             PlatonMethodProperty.ext4: ext4,
+            PlatonMethodProperty.ext10: ext10,
         ]
     }
     
-    public init(language: String?, errorUrl: String?, formId: String?, ext1: String?, ext2: String?, ext3: String?, ext4: String?) {
+    public init(language: String?, errorUrl: String?, formId: String?, ext1: String?, ext2: String?, ext3: String?, ext4: String?, ext10: String?) {
         self.language = language
         self.errorUrl = errorUrl
         self.formId = formId
@@ -130,6 +134,7 @@ public struct PlatonWebSaleAdditional: PlatonParametersProtocol, PlatonWebAdditi
         self.ext2 = ext2
         self.ext3 = ext3
         self.ext4 = ext4
+        self.ext10 = ext10
     }
     
 }

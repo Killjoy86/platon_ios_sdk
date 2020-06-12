@@ -138,6 +138,7 @@ public enum PlatonMethodProperty: String, Decodable {
     case ext2 = "ext2"
     case ext3 = "ext3"
     case ext4 = "ext4"
+    case ext10 = "ext10"
     case firstName = "first_name"
     case formId = "formid"
     case hash = "hash"
